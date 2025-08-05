@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/AnuragRajput-cyber/Jenkins-Pipeline-for-CI-CD.git'
+                git branch: 'main',
+                    url: 'https://github.com/AnuragRajput-cyber/Jenkins-Pipeline-for-CI-CD.git'
             }
         }
 
